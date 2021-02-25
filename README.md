@@ -10,3 +10,6 @@ Usage is pretty simple. Download the `buildfile_src/main.py` file, you can renam
 
 # Credits
 none of these (yet)
+
+# Random note.
+yeah i know that github says some of this code is ruby, but it's not. its pure python. with an example in c++.
