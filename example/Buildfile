@@ -1,0 +1,5 @@
+pull,https://github.com/DeBeast591/Buildfile
+gpp,example/src/main.cpp,example/export/main.out
+add,./*
+commit
+push,https://github.com/DeBeast591/Buildfile
