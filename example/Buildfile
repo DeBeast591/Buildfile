@@ -3,3 +3,4 @@ gpp,example/src/main.cpp,example/export/main.out
 add,./*
 commit
 push,https://github.com/DeBeast591/Buildfile
+exec,example/export/main.out
