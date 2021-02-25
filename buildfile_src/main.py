@@ -9,14 +9,14 @@ def iterate_file(buildfile):
     with open(buildfile) as BUILDFILE:
         for x in BUILDFILE.readlines():
             x = x.strip("\n")
-            
+
             if not x.startswith("//") and x != "":
                 x = x.split(",")
 
                 for y in x:
                     y.strip("\n")
 
-                print(x)
+                #print(x)
 
                 if x[0] == "pull":
                     del x[0]
@@ -43,11 +43,12 @@ def iterate_file(buildfile):
                     system_command("git commit -m \"" + input("Commit name> ") + "\"")
                 
                 else:
-                    print("ERROR IN BUILDFILE")
+                    print("[Buildfile/Error] ERROR IN BUILDFILE")
                     quit()
 
 def main():
-    print("Builder.")
+    print("[Buildfile/Info] Builder.")
     iterate_file(sys.argv[1])
+    print("[Buildfile/Info] Exited.")
 
 main()
